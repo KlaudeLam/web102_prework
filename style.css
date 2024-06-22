@@ -47,27 +47,66 @@ body>div {
     cursor: pointer;
 }
 
+.body-part {
+    margin: 3rem auto 0;
+}
+
+.body-part h1{
+    width: 100%;
+    text-align: center;
+}
+
+#introduction {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+    background-color: rgb(27, 34, 43);
+    color: white;
+    border-radius: 1.5rem;
+    width: 70%;
+    padding: 2rem;
+}
+
+#stats-board {
+    /* border-radius: 1.5rem; */
+    /* background-color: #FFFFFF; */
+    padding: 1rem;
+    background-color: #d5dfea;
+}
 .stats-container {
     display: flex;
     align-items: center;
     justify-content: center;
-    cursor: pointer;
-    box-shadow: 0 0 30px lightblue;
+    /* box-shadow: 0 0 30px lightblue; */
 }
 
 .stats-card {
-    background-color: #a8b0bc;
+    background-color: #FFFFFF;
     border-radius: 7px;
     padding: 1%;
     margin: 1%;
     text-align: center;
     width: 100%;
+    transition: transform .2s;
+}
+
+.stats-card:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 
 #num-contributions, #total-raised, #num-games {
     font-size: 50px;
 }
 
+#our-games>p {
+    width: 100%;
+    text-align: center;
+}
 #games-container {
     display: flex;
     flex-wrap: wrap;
@@ -98,7 +137,7 @@ body>div {
     text-align: center;
 }
 
-button {
+#our-games button {
     font-family: 'Cabin';
     border: none;
     padding: 1%;
@@ -106,6 +145,14 @@ button {
     border-radius: 7px;
 }
 
-button:hover {
+#our-games button:hover {
     cursor: pointer;
+    background-color: rgb(27, 34, 43);
+    color: white;
+}
+
+#footer {
+    margin-top: 2rem;
+    background-color: rgb(27, 34, 43);
+    color: white;
 }
